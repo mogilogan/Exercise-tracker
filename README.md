@@ -30,14 +30,28 @@ npm start
 
 ## FRONTEND
 
-You can add Users,
-Assign exercises to them and
-Edit or Delete them.
-<br />
-<br />
-<br />
-<br />
-![Alt text](Img/server1.JPG?raw=true "Title")
-<br />
-<br />
-![Alt text](Img/server.JPG?raw=true "Title")
+The Frontend has 4 Component with navbar to navigate between Them
+
+- The Main component loads all the exercise of the user using [axios](https://www.npmjs.com/package/axios).fetch
+- The create exercise is made to create new exercise
+- The edit Exercise components takes id as url params and edits the exercies!
+- The Create User Component is used to Sign up
+
+![Sample Image](Img/server1.JPG?raw=true "Title")
+
+## BACKEND
+The Express App handles REST api in a simpler way. This app two main routes.
+
++ Exercise Route:
+  - get all exercise
+  - get exercise by id
+  - delete exercise
+  - update exercise by id
+    
++ User Route
+  - Get all users
+  - Sign up users
+
+## Database
+
+Two Schemas were used: Exercise document and User document
